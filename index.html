@@ -1,0 +1,215 @@
+<html lang="en">	
+<head>
+	<meta charset="utf-8">
+	<title>JCU Talk</title>
+	<link rel="stylesheet" href="shared/css/reveal.min.css">
+	<link rel="stylesheet" href="shared/css/theme/night.css" id="theme">	
+</head>
+ 
+<body>
+	<!-- Wrap the entire slide show in a div using the "reveal" class. -->
+	<div class="reveal">
+		<!-- Wrap all slides in a single "slides" class -->
+		<div class="slides">
+ 
+			<!-- ALL SLIDES GO HERE -->
+			<!-- Each section element contains an individual slide -->
+			<section>
+				<h2>John Carroll Talk</h2>
+				<h3>2018-04-05</h3>
+				<p>Jacob Miller</p>
+				<a href="https://twitter.com/JacobOMiller?ref_src=twsrc%5Etfw" class="twitter-follow-button" data-show-count="false">@JacobOMiller</a><script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+				<br>
+				<script src="//platform.linkedin.com/in.js" type="text/javascript"></script>
+<script type="IN/MemberProfile" data-id="https://www.linkedin.com/in/jacob-miller-2ab1b617" data-format="hover" data-related="false" data-text="Jacob Miller"></script>
+				<br>
+				<address><a href="mailto:jmiller.4038@gmail.com">jmiller.4038@gmail.com</a></address>
+				<br>
+				View <a href="https://github.com/jmiller4038/jcu-presentation">this presentation</a> on github
+			</section>
+			<section>
+				<section>
+					<h1>About Me</h1>
+				</section>
+
+				<section data-background="./img/ohio-state.jpg">
+					<h2>Education</h2>
+					<ul>
+						<li class="fragment">B.S. Industrial Engineering The Ohio State University</li>
+						<li class="fragment">M.S. Operations Research The Ohio State University</li>
+					</ul>
+				</section>
+
+				<section>
+					<h2>Professional Positions</h2>
+					<ul>
+						<li class="fragment">Director of Foundational Informatics - IBM Watson Health</li>
+						<li class="fragment">Data Scientist - Explorys</li>
+						<li class="fragment">Operations Research Analyst - U.S. Department of Energy</li>
+						<li class="fragment">Research Assistant - The Ohio State University</li>
+					</ul>
+				</section>
+			</section>
+ 
+			<section>
+				<section>
+					<h2>Tools of the Trade</h2>
+				</section>
+
+				<section>
+					<h2>What Do You Build Models In?</h2>
+					<ul>
+						<li class="fragment">Python</li>
+						<li class="fragment">R</li>
+						<li class="fragment">Java</li>
+						<li class="fragment"><strike>SAS</strike></li>
+						<li class="fragment"><strike>SPSS</strike></li>
+					</ul>
+				</section>
+
+				<section>
+					<h2>Visualization Tools</h2>
+					<ul>
+						<li class="fragment"><a href="https://d3js.org/">D3.js</a></li>
+						<li class="fragment"><a href="http://ggplot2.org/">ggplot2</a></li>
+						<li class="fragment">Python - Matploblib/Bokeh/Seaborn</li>
+					</ul>
+				</section>
+
+				<section>
+					<h2>Other Tools</h2>
+					<ul>
+						<li><a href="https://git-scm.com/">git</a></li>
+						<li>Terminal / Bash</li>
+						<li><a href="https://www.docker.com/">Docker</a></li>
+					</ul>
+				</section>
+
+				<section>
+					<h2>Where Can I Learn More?</h2>
+					<ul>
+						<li>Wes McKinney</li>
+						<ul>
+							<li><a href="http://wesmckinney.com/">http://wesmckinney.com</a></li>
+							<li><a href="https://twitter.com/wesmckinn?ref_src=twsrc%5Etfw" class="twitter-follow-button" data-show-count="false">@wesmckinn</a><script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script></li>
+						</ul>
+						<li>Hadley Wickham</li>
+						<ul>
+							<li><a href="http://hadley.nz/">http://hadley.nz</a></li>
+							<li><a href="https://twitter.com/hadleywickham?ref_src=twsrc%5Etfw" class="twitter-follow-button" data-show-count="false">@hadleywickham</a><script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script></li>
+						</ul>
+						<li>Mike Bostock</li>
+						<ul>
+							<li><a href="https://bost.ocks.org/mike">https://bost.ocks.org/mike</a></li>
+							<li><a href="https://twitter.com/mbostock?ref_src=twsrc%5Etfw" class="twitter-follow-button" data-show-count="false">@mbostock</a><script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script></li>
+						</ul>
+					</ul>
+				</section>
+			</section>
+
+			<section>
+				<section>
+					<h2>Probabilistic Patient Matching</h2>
+				</section>
+
+				<section>
+					<h3> Why Match? </h3>
+					<ul>
+							<li class="fragment"> Determining which records belong to a person is a challenging problem </li>
+							<li class="fragment"> Connecting records to the right person is vital </li>
+							<ul>
+								<li class="fragment">Making medical decisions with a subset of information is sub-optional</li>
+							</ul>
+							<li class="fragment">The proliferation of available data exaggerates this problem</li>
+							<ul>
+								<li class="fragment">Wearables (Fitbit / Apple Watch)</li>
+								<li class="fragment">Genomics Data (23andme)</li>
+								<li class="fragment">Social Data (Facebook, Twitter)</li>
+							</ul>
+					</ul>
+				</section>
+
+				<section>
+					<h3> Patient matching is <em>hard</em>. </h3>
+					<ul>
+							<li class='fragment'> Conflict within one EMR (multiple visits, errors in registering data) </li>
+							<li class='fragment'> Multiple databases (inpatient, ambulatory, data warehouse) </li>
+							<li class='fragment'> Missing information (laboratory feeds, insurance claims) </li>
+							<li class='fragment'> Data entry errors (humans make mistakes) </li>
+					</ul>
+				</section>
+			</section>
+
+			<section>
+				<section>
+					<h3> So how <em>do</em> we match patients? </h3>
+				</section>
+				<section>
+					<h3> <b> Step 1: </b> Clean the data </h3>
+					<ul>
+						<li class="fragment"> Standardizing data fields is important
+								<ul> <li class='fragment'> SSN with or without hyphens?</ul>
+						<li class="fragment"> Understanding dirty data is important
+						<ul> 
+							<li class="fragment"> Invalid SSN, hospital addresses, default birth date
+						</ul>
+					</ul>
+				</section>
+				<section>
+					<h3> <b> Step 2: </b> Group similar<em>ish</em> patients </h3>
+					<ul>
+						<li class="fragment"> Comparing all pairs of records is impractical
+						<li class="fragment"> Reducing the number of comparisons is necessary
+					</ul>
+					<img class="fragment" width=450 height=450 src="img/blocking.png" style="border:none;">
+				</section>
+				<section>
+					<h3> <b> Step 3: </b> Score pairs of records </h3>
+					<ul>
+						<li class="fragment">Methodology based off of <a href="https://amstat.tandfonline.com/doi/abs/10.1080/01621459.1969.10501049">Felligi Sunter paper</a> from 1969!</li>
+						<li class="fragment"> Calculate a numerical score based on different features of the records
+						<li class="fragment"> Frequency of values is also important
+						<ul>
+							<li class="fragment"> Match on 'Miller' is less evidence than a match on 'Manilich'
+						</ul>
+					</ul>
+				</section>
+				<section>
+					<h3> <b> Step 4: </b> Create Network</h3>
+					<ul>
+						<li class="fragment"> Not sufficient to look at pairs; patients can have many more than 2 demographics
+						<li class="fragment"> Creating the network is simple, validating it is hard
+						<li class="fragment"> &ldquo;<em>Connected components algorithm</em>&rdquo;
+					</ul>
+					<img class="fragment" src="img/patient_set.png" style="border:none;">
+				</section>
+			</section>
+
+			<section>
+				<h2>Questions?</h2>
+			</section>
+		</div>
+	</div>
+	<script src="shared/js/head.min.js"></script>
+	<script src="shared/js/reveal.min.js"></script>
+ 
+		<script>
+			// More info https://github.com/hakimel/reveal.js#configuration
+			Reveal.initialize({
+				controls: true,
+				progress: true,
+				history: true,
+				center: true,
+				transition: 'slide',
+				dependencies: [
+					{ src: 'shared/lib/js/classList.js', condition: function() { return !document.body.classList; } },
+					{ src: 'shared/plugin/markdown/marked.js', condition: function() { return !!document.querySelector( '[data-markdown]' ); } },
+					{ src: 'shared/plugin/markdown/markdown.js', condition: function() { return !!document.querySelector( '[data-markdown]' ); } },
+					{ src: 'shared/plugin/highlight/highlight.js', async: true, callback: function() { hljs.initHighlightingOnLoad(); } },
+					{ src: 'shared/plugin/zoom-js/zoom.js', async: true },
+					{ src: 'shared/plugin/notes/notes.js', async: true }
+				]
+			});
+		</script>
+</body>
+</html>
